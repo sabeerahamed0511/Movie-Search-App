@@ -8,7 +8,7 @@ function getData() {
     let loaderDiv = document.createElement("div");
     loaderDiv.id = "loader";
     content.append(loaderDiv);
-    fetch(`http://www.omdbapi.com/?t=${search}&apikey=c7ca5036`)
+    fetch(`https://www.omdbapi.com/?t=${search}&apikey=c7ca5036`)
         .then((res) => res.json())
         .then((result) => {
             if (result.Response !== "True") {
